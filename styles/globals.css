@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer base {
   :root {
@@ -34,6 +38,7 @@
     --ring: 215 20.2% 65.1%;
 
     --radius: 0.5rem;
+    --green: #b1cbbb
   }
 
   .dark {
@@ -67,6 +72,8 @@
     --ring: 216 34% 17%;
 
     --radius: 0.5rem;
+
+
   }
 }
 
@@ -74,8 +81,17 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+}
+
+.head_text {
+  @apply mt-5 text-5xl font-bold leading-[1.15] sm:text-6xl font-inter;
+}
+
+.heading_gradient {
+  @apply bg-gradient-to-r from-slate-200 to-gray-200 bg-clip-text text-transparent;
 }
