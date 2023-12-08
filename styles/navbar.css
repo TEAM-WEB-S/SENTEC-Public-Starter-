@@ -1,0 +1,17 @@
+.nav-top{
+    position: fixed;
+    top: 0;
+    z-index: 70;
+    transition: all .3s ease-in-out;
+    background: #111010;
+    box-shadow: 0 0 40px 5px rgb(0 0 0 / 8%);
+    animation: navAnimate 0.5s ease-in-out;
+}
+
+@keyframes navAnimate {
+    0%{
+        transform: translateY(-50px);
+    }100%{
+        transform: translateY(0px);
+    }
+}

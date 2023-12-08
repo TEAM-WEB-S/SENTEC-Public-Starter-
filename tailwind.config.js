@@ -55,6 +55,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        plus: ['Plus Jakarta Sans', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {

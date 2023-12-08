@@ -1,11 +1,13 @@
 import { cn } from "@/lib/utils"
-
-import ContactForm from "@/Components/ContactForm";
+import Bananer from "@/Components/Banner/Banner";
+import TopBar from "@/Components/TopBar/TopBar";
+import NavBar from "@/Components/NavBar/NavBar";
 
 export default function Home() {
   return (
     <div>
-      <ContactForm/>
+      <TopBar />
+      <Bananer />
     </div>
   )
 }
