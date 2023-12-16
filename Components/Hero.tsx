@@ -12,12 +12,12 @@ function Hero() {
 
         <div className="mt-14 flex flex-row items-center justify-center gap-6">
           <Link href={"/first"}>
-            <button className="flex items-center justify-center rounded-full bg-teal-100 px-10 py-3 text-center font-inter text-teal-800 transition-all hover:bg-teal-200">
+            <button className="font-inter flex items-center justify-center rounded-full bg-teal-100 px-10 py-3 text-center text-teal-800 transition-all hover:bg-teal-200">
               dumy
             </button>
           </Link>
           <Link href={"/second"}>
-            <button className="flex items-center justify-center rounded-full bg-teal-100 px-10 py-3 text-center font-inter text-teal-800 transition-all hover:bg-teal-200">
+            <button className="font-inter flex items-center justify-center rounded-full bg-teal-100 px-10 py-3 text-center text-teal-800 transition-all hover:bg-teal-200">
               dumy
             </button>
           </Link>

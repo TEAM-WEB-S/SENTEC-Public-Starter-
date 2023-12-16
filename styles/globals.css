@@ -1,10 +1,83 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-[1300px] w-[95%] mx-auto;
+  }
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #F8F8F8 !important;
+  overflow-x: hidden;
+}
+
+
+.primaryBtn {
+  position: relative;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  background: #f4af1b;
+  color: #fff;
+  font-size: 600;
+  font-size: 15px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.primaryBtn a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.primaryBtn::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #0C1239;
+  transition: 0.8s;
+  border-radius: 50% 50% 0% 0%;
+  z-index: -1;
+}
+
+.primaryBtn:hover::before {
+  height: 180%;
+  transition: 0.8s;
+  border-radius: 4px;
+}
+
+.secondaryBtn {
+  background: #0C1239;
+}
+
+.secondaryBtn::before {
+  background: #f4af1b;
+}
 
 @layer base {
   :root {
@@ -77,19 +150,9 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
-  }
-}
 
 .head_text {
-  @apply mt-5 text-5xl font-bold leading-[1.15] sm:text-6xl font-inter;
+  @apply mt-5 text-5xl font-bold leading-[1.15] sm:text-6xl;
 }
 
 .heading_gradient {
