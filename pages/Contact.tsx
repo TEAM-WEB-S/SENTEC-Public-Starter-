@@ -14,29 +14,29 @@ import React from "react"
 function Contact() {
   return (
     <div className=" mt-0 overflow-y-hidden bg-gray-100">
-      <div className="grid h-full w-full md:grid-cols-3 md:gap-1 md:pt-[2.9rem] grid-cols-1">
+      <div className="grid h-full w-full grid-cols-1 md:grid-cols-3 md:gap-1 md:pt-[2.9rem]">
         {/* -------------------first-------------  */}
 
-        <div className=" md:ml-[6rem] h-[40.5rem] md:w-[29rem] bg-white md:p-9 p-3">
+        <div className=" h-[40.5rem] bg-white p-3 md:ml-[6rem] md:w-[29rem] md:p-9">
           <h3 className="mb-6 mt-4 text-[#f4af1b]">
             <FontAwesomeIcon className="mr-2" icon={solid("star")} />
             MAKE CONNECTING
           </h3>
-          <h1 className="mb-7 mt-8 w-[20rem] pb-2 md:text-4xl font-bold text-[1.5rem] ">
+          <h1 className="mb-7 mt-8 w-[20rem] pb-2 text-[1.5rem] font-bold md:text-4xl ">
             Find Your Contact Information
           </h1>
-          <p className="font-2xl mb-8 md:w-[22rem] text-gray-500">
+          <p className="font-2xl mb-8 text-gray-500 md:w-[22rem]">
             We understand that it is important for you access our services in a
             way time
           </p>
-          <h3 className="md:mb-4 mb-6 text-xl font-bold">
+          <h3 className="mb-6 text-xl font-bold md:mb-4">
             <FontAwesomeIcon
               className="mr-3 text-xl "
               icon={solid("signs-post")}
             />
             Council Postal Address
           </h3>
-          <p className="font-2xl mb-7 md:w-[22rem] text-gray-500">
+          <p className="font-2xl mb-7 text-gray-500 md:w-[22rem]">
             Level 2, 325 Reynolds Neck 2nd Street, San Antonio 78154
           </p>
           <Link href={""} className=" font-bold">
@@ -95,11 +95,11 @@ function Contact() {
         </div>
         {/* ---------last----------------- */}
 
-        <div className="h-[40.5rem] md:w-[29rem] bg-white">
-          <div className="relative grid grid-rows-3 gap-9 border border-white md:p-9 md:text-center pl-[1rem]">
+        <div className="h-[40.5rem] bg-white md:w-[29rem]">
+          <div className="relative grid grid-rows-3 gap-9 border border-white pl-[1rem] md:p-9 md:text-center">
             <div className="relative border-b border-gray-200 pb-7 pt-4">
               <h3 className="mb-1 text-xl font-extrabold">Business</h3>
-              <div className="absolute md:left-3 top-6 left-[12rem]">
+              <div className="absolute left-[12rem] top-6 md:left-3">
                 <img
                   className="h-10 w-10"
                   src="/../image/gmail.png"
@@ -113,7 +113,7 @@ function Contact() {
 
             <div className="relative border-b border-gray-200 pb-5">
               <h3 className="mb-1 text-xl font-extrabold">Phone</h3>
-              <div className="absolute md:left-3 top-3 left-[12rem]">
+              <div className="absolute left-[12rem] top-3 md:left-3">
                 <img
                   className="h-11 w-11"
                   src="/../image/telephone.png"
@@ -127,7 +127,7 @@ function Contact() {
 
             <div className="relative">
               <h3 className="mb-1 text-xl font-extrabold">Mon - Friday</h3>
-              <div className="absolute md:left-3 top-4 left-[12rem]">
+              <div className="absolute left-[12rem] top-4 md:left-3">
                 <img
                   className="h-11 w-11"
                   src="/../image/back-in-time.png"
