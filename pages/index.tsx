@@ -1,8 +1,7 @@
+import { cn } from "@/lib/utils"
 import Bananer from "@/Components/Banner/Banner";
 import TopBar from "@/Components/TopBar/TopBar";
-import About from "@/Components/About/About";
-import ExcomTeam from "@/Components/ExcomTeam/ExcomTeam";
-import Domain from "@/Components/Domain/Domain";
+import NavBar from "@/Components/NavBar/NavBar";
 
 export default function Home() {
   return (
