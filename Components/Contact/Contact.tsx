@@ -1,15 +1,11 @@
 import {
   solid,
-  regular,
-  brands,
-  icon,
 } from "@fortawesome/fontawesome-svg-core/import.macro"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 
-;<link rel="icon" href="/icon?<generated>" type="image/png" sizes="32x32" />
 
 function Contact() {
   return (
@@ -65,7 +61,7 @@ function Contact() {
 
             <Link href={""}>
               <Image
-                width={35}
+                width={45}
                 height={35}
                 alt="fb.png"
                 src={"/../image/gmail.png"}
@@ -100,7 +96,7 @@ function Contact() {
             <div className="relative border-b border-gray-200 pb-7 pt-4">
               <h3 className="mb-1 text-xl font-extrabold">Business</h3>
               <div className="absolute left-[12rem] top-6 md:left-3">
-                <img
+                <Image
                   className="h-10 w-10"
                   src="/../image/gmail.png"
                   alt="Business Image"
@@ -114,10 +110,11 @@ function Contact() {
             <div className="relative border-b border-gray-200 pb-5">
               <h3 className="mb-1 text-xl font-extrabold">Phone</h3>
               <div className="absolute left-[12rem] top-3 md:left-3">
-                <img
+                <Image
                   className="h-11 w-11"
                   src="/../image/telephone.png"
                   alt="Business Image"
+                  width={35}
                 />
               </div>
               <p className="font-l mb-3  text-gray-500">040404</p>
@@ -128,10 +125,11 @@ function Contact() {
             <div className="relative">
               <h3 className="mb-1 text-xl font-extrabold">Mon - Friday</h3>
               <div className="absolute left-[12rem] top-4 md:left-3">
-                <img
+                <Image
                   className="h-11 w-11"
                   src="/../image/back-in-time.png"
                   alt="Business Image"
+                  width={35}
                 />
               </div>
               <p className="font-l mb-3  text-gray-500">9.00am to 6.45pm</p>
