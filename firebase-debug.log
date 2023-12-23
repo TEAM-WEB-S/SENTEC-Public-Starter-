@@ -1,0 +1,86 @@
+[debug] [2023-12-23T13:03:36.938Z] ----------------------------------------------------------------------
+[debug] [2023-12-23T13:03:36.941Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Umair\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-23T13:03:36.941Z] CLI Version:   13.0.2
+[debug] [2023-12-23T13:03:36.942Z] Platform:      win32
+[debug] [2023-12-23T13:03:36.942Z] Node Version:  v19.2.0
+[debug] [2023-12-23T13:03:36.942Z] Time:          Sat Dec 23 2023 18:03:36 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-12-23T13:03:36.942Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-23T13:03:37.018Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-23T13:03:37.019Z] > authorizing via signed-in user (trionixwebsolution@gmail.com)
+[debug] [2023-12-23T13:03:37.019Z] [iam] checking project sentech-29c7a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-23T13:03:37.021Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sentech-29c7a:testIamPermissions [none]
+[debug] [2023-12-23T13:03:37.021Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sentech-29c7a:testIamPermissions x-goog-quota-user=projects/sentech-29c7a
+[debug] [2023-12-23T13:03:37.021Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sentech-29c7a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-23T13:03:38.685Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sentech-29c7a:testIamPermissions 200
+[debug] [2023-12-23T13:03:38.685Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sentech-29c7a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-23T13:03:38.686Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sentech-29c7a [none]
+[debug] [2023-12-23T13:03:39.160Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sentech-29c7a 200
+[debug] [2023-12-23T13:03:39.160Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sentech-29c7a {"projectId":"sentech-29c7a","projectNumber":"7693031192","displayName":"sentech","name":"projects/sentech-29c7a","resources":{"hostingSite":"sentech-29c7a"},"state":"ACTIVE","etag":"1_cd8ba40e-9317-4787-97b6-29886f1fb648"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-23T13:03:52.279Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sentech-29c7a/sites/sentech-29c7a [none]
+[debug] [2023-12-23T13:03:53.989Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sentech-29c7a/sites/sentech-29c7a 200
+[debug] [2023-12-23T13:03:53.989Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sentech-29c7a/sites/sentech-29c7a {"name":"projects/sentech-29c7a/sites/sentech-29c7a","defaultUrl":"https://sentech-29c7a.web.app","type":"DEFAULT_SITE"}
+[info]    Linting and checking validity of types ...
+
+[info]    Creating an optimized production build ...
+
+[info] Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'D:\My Studies\Work\Sentech\Projects\SENTEC-Public-Starter-\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'D:\\My Studies\\Work\\Sentech\\Projects\\SENTEC-Public-Starter-\\.next\\trace'
+}
+
+[debug] [2023-12-23T13:04:06.204Z] Error: ENOENT: no such file or directory, open 'D:\My Studies\Work\Sentech\Projects\SENTEC-Public-Starter-\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-12-23T13:05:17.052Z] ----------------------------------------------------------------------
+[debug] [2023-12-23T13:05:17.055Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Umair\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-23T13:05:17.055Z] CLI Version:   13.0.2
+[debug] [2023-12-23T13:05:17.055Z] Platform:      win32
+[debug] [2023-12-23T13:05:17.056Z] Node Version:  v19.2.0
+[debug] [2023-12-23T13:05:17.056Z] Time:          Sat Dec 23 2023 18:05:17 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-12-23T13:05:17.056Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-23T13:05:17.129Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-23T13:05:17.130Z] > authorizing via signed-in user (trionixwebsolution@gmail.com)
+[debug] [2023-12-23T13:05:17.130Z] [iam] checking project sentech-29c7a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-23T13:05:17.132Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sentech-29c7a:testIamPermissions [none]
+[debug] [2023-12-23T13:05:17.132Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sentech-29c7a:testIamPermissions x-goog-quota-user=projects/sentech-29c7a
+[debug] [2023-12-23T13:05:17.133Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sentech-29c7a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-23T13:05:18.623Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sentech-29c7a:testIamPermissions 200
+[debug] [2023-12-23T13:05:18.624Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sentech-29c7a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-23T13:05:18.626Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sentech-29c7a [none]
+[debug] [2023-12-23T13:05:19.228Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sentech-29c7a 200
+[debug] [2023-12-23T13:05:19.228Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sentech-29c7a {"projectId":"sentech-29c7a","projectNumber":"7693031192","displayName":"sentech","name":"projects/sentech-29c7a","resources":{"hostingSite":"sentech-29c7a"},"state":"ACTIVE","etag":"1_cd8ba40e-9317-4787-97b6-29886f1fb648"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-23T13:05:31.453Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sentech-29c7a/sites/sentech-29c7a [none]
+[debug] [2023-12-23T13:05:32.997Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sentech-29c7a/sites/sentech-29c7a 200
+[debug] [2023-12-23T13:05:32.997Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sentech-29c7a/sites/sentech-29c7a {"name":"projects/sentech-29c7a/sites/sentech-29c7a","defaultUrl":"https://sentech-29c7a.web.app","type":"DEFAULT_SITE"}
+[info]    Linting and checking validity of types ...
+
+[info]    Creating an optimized production build ...
+

@@ -1,5 +1,4 @@
 import React from 'react'
-import {BsMicrosoftTeams} from 'react-icons/bs'
 import team01 from '../../public/Domains/TEAM WEB DEVELOPMENT.png'
 import team02 from '../../public/Domains/TEAM DOCUMENTATION.png'
 import team03 from '../../public/Domains/TEAM EVENT MANAGEMENT.png'
@@ -12,9 +11,6 @@ import team09 from '../../public/Domains/TEAM RESEARCH AND DEVELOPMENT.png'
 import team10 from '../../public/Domains/TEAM ROBOTICS AND IT.png'
 import team11 from '../../public/Domains/TEAM SOCIAL MEDIA.png'
 import Image from 'next/image'
-import { FaLinkedinIn , FaInstagram  } from "react-icons/fa6";
-import { FaFacebookF } from "react-icons/fa";
-
 
 function Domain() {
   return (
