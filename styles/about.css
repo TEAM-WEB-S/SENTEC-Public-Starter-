@@ -1,0 +1,257 @@
+.Conatiner{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin: 100px 0px;
+}
+
+.inner-container{
+    width: 95%;
+    max-width: 1110px;
+    margin: auto;
+}
+
+.about{
+    position: relative;
+    height: fit-content;
+}
+
+.inner-container-about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about .about-tranotion-image{
+    position: absolute;
+    right: -20px;
+    bottom: -150px;
+    width: 450px;
+    opacity: 0.3;
+    z-index: -1;
+    animation: anim 8s linear infinite;
+}
+
+@keyframes anim{
+    0%{
+        transform: translateX(-100px);
+    }25%{
+        transform: translateX(-50px);
+    }50%{
+        transform: translateX(0px);
+    }70%{
+        transform: translateX(-50px);
+    }100%{
+        transform: translateX(-100px);
+    }
+}
+
+.image-cont .image-container{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.image-cont .image-container .aboutimg01{
+    max-width: 100%;
+    width: 300px;
+}
+
+.image-cont .image-container .aboutimg02{
+    max-width: 100%;
+    width: 150px
+}
+
+.image-cont .image-container img{
+    border-radius: 12px;
+}
+
+
+
+.des-content{
+    flex-basis: 55%;
+}
+
+.image-cont{
+    flex-basis: 45%;
+    /* background: green; */
+    height: 100%;
+}
+
+.des-content .des-tiitle{
+    color: #f4af1b;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.des-tiitle svg{
+    font-size: 17px;
+}
+
+.des-content h2{
+    color: #0C1239;
+    margin: -8px 0px 3px;
+    font-size: 32px;
+}
+
+.des-content p , .des-content h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+.des-content .des-para{
+    color: #61657E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.vission-mission{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.vm-head{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: -15px;
+}
+
+.vission-mission p{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.vission-mission svg{
+    color: #f4af1b;
+    font-size: 20px;
+    box-shadow: 4px 4px 15px rgba(254, 93, 20, 0.4);
+    background: none;
+    border-radius: 50%;
+}
+
+.vission-mission h3{
+    font-size: 22px;
+}
+
+.about-btn{
+    margin-top: 10px;
+}
+
+@media screen and (min-width:200px) and (max-width:1070px){
+    .image-cont .image-container .aboutimg01{
+        width: 250px;
+    }
+    
+    .image-cont .image-container .aboutimg02{
+        width: 100px
+    }
+}
+
+
+@media screen and (min-width:200px) and (max-width:870px){
+    .des-content h2{
+        font-size: 28px;
+    }
+    .inner-container-about{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .image-cont .image-container .aboutimg01{
+        width: 300px;
+    }
+    
+    .image-cont .image-container .aboutimg02{
+        width: 150px
+    }
+    
+}
+
+@media screen and (min-width:200px) and (max-width:530px){
+    .image-cont .image-container .aboutimg02{
+        display: none;
+    }
+    .image-cont .image-container .aboutimg01{
+        width: 100%;
+        max-width: 450px;
+    }
+    .about .about-tranotion-image{
+        width: 380px;
+    }
+    
+}
+
+@media screen and (min-width:200px) and (max-width:450px){
+    .vission-mission{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:360px){
+    .des-content h2{
+        font-size: 24px;
+    }
+}
+
+.button{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background: #f4af1b;
+    color: #fff;
+    font-size: 600;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.button a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #0C1239;
+    transition: 0.8s;
+    border-radius: 50% 50% 0% 0%;
+}
+
+.button:hover::before{
+    height:180%;
+    transition:0.8s ;
+    border-radius: 4px;
+}
+
+.button span , .button svg{
+    z-index: 1;
+    transition: 0.8s;
+}
+
+.button:hover a span{
+    color: #f4af1b;
+    transition: 0.8s;
+}
+
+.button:hover a svg{
+    color: #f4af1b;
+    transition: 0.8s;
+}
