@@ -67,13 +67,11 @@ const Gallery = () => {
             }
         </div>
         <div className='image-gallery-sentec' >
-            {
-                selected.images.map((img , index) => (
-                   <div className='each-gallery-image'  data-aos="fade-up" data-aos-duration="800" key={index} >
-                       <Image  src={img} className='galley-images' />
-                   </div>
-                ))  
-            }
+            {selected.images.map((img, index) => (
+            <div className='each-gallery-image' data-aos="fade-up" data-aos-duration="800" key={index}>
+                <Image src={img} alt={`Tech Talk ${index + 1}`} className='galley-images' />
+            </div>
+            ))}
         </div>
     </div>
 </div>
