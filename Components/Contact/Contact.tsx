@@ -1,11 +1,8 @@
-import {
-  solid,
-} from "@fortawesome/fontawesome-svg-core/import.macro"
+import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-
 
 function Contact() {
   return (
@@ -61,10 +58,10 @@ function Contact() {
 
             <Link href={""}>
               <Image
+                src={"/../image/gmail.png"}
                 width={45}
                 height={35}
                 alt="fb.png"
-                src={"/../image/gmail.png"}
               />
             </Link>
 
@@ -100,6 +97,8 @@ function Contact() {
                   className="h-10 w-10"
                   src="/../image/gmail.png"
                   alt="Business Image"
+                  height={10}
+                  width={10}
                 />
               </div>
               <p className="font-l mb-3 text-gray-500">info@example.com</p>
@@ -115,6 +114,7 @@ function Contact() {
                   src="/../image/telephone.png"
                   alt="Business Image"
                   width={35}
+                  height={35}
                 />
               </div>
               <p className="font-l mb-3  text-gray-500">040404</p>
@@ -130,6 +130,7 @@ function Contact() {
                   src="/../image/back-in-time.png"
                   alt="Business Image"
                   width={35}
+                  height={35}
                 />
               </div>
               <p className="font-l mb-3  text-gray-500">9.00am to 6.45pm</p>

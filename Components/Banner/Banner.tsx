@@ -14,7 +14,6 @@ const Banner = () => {
         setSliderNum(sliderNum + 1)
       }
     }, 6000)
-
     return () => clearTimeout(timeoutId)
   }, [sliderNum])
 
