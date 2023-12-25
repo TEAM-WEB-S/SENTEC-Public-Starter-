@@ -61,8 +61,8 @@ const Gallery = () => {
     <div className='max-w-[1280px] mx-auto  w-[95%] !my-[40px]' >
         <div className='flex justify-start gap-[20px] items-center' >
             {
-                sentechGallary.map((btn) => (
-                    <button onClick={() => handleGallery(btn)} className={`primaryBtn secondaryBtn ${selected.name == btn.name && 'active'}`} >{btn.name}</button>
+                sentechGallary.map((btn , index) => (
+                    <button key={index} onClick={() => handleGallery(btn)} className={`primaryBtn secondaryBtn ${selected.name == btn.name && 'active'}`} >{btn.name}</button>
                 ))
             }
         </div>
