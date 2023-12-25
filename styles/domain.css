@@ -17,3 +17,16 @@
     transition: all linear 0.5s;
     cursor: pointer;
 }
+
+@media screen and (min-width:200px) and (max-width:650px) {
+    .domain-sub-container {
+        grid-template-columns: 1fr; /* Set child elements to take full width */
+    }
+}
+
+
+@media screen and (min-width:200px) and (max-width:550px) {
+    .domain-sub-container  {
+        grid-template-columns: 1fr; /* Set child elements to take full width */
+    }
+}

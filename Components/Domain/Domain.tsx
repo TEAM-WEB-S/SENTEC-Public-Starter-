@@ -14,10 +14,11 @@ import Image from 'next/image'
 
 function Domain() {
   return (
-    <div className='conatiner team-container '  >
+    <div className='w-[95%] mx-auto  team-container'  >
         <div data-aos="fade-up" data-aos-duration="800" className='comman-head' >
             {/* <p  className='sub-tittle-comman' ><BsMicrosoftTeams /><span>Team</span></p> */}
             <h3 className='titlle-coman' >Our <span>Domains</span></h3>
+            <p className='max-w-[800px] mx-auto my-1 text-gray-600' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aliquam totam optio odio exercitationem voluptatem adipisci illo, fuga distinctio laborum!</p>
         </div>
         <div className='team-sub-container domain-sub-container !mt-[30px]' >
                 <Team  image={team01} desc="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English." />

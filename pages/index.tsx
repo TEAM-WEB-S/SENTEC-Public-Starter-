@@ -4,6 +4,7 @@ import ExcomTeam from "@/Components/ExcomTeam/ExcomTeam";
 import Domain from "@/Components/Domain/Domain";
 import About from "@/Components/About/About";
 import Contact from "@/Components/Contact/Contact";
+import Gallery from "@/Components/Gallery/Gallery";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <ExcomTeam />
       <Domain />
+      <Gallery />
       <Contact />
     </div>
   )

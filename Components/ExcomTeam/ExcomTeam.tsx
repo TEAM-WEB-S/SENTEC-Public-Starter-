@@ -150,6 +150,7 @@ function ExcomTeam() {
         <h3 className="titlle-coman">
           Meet With Our <span>Excom Commitee</span>
         </h3>
+        <p className='max-w-[800px] mx-auto my-1 text-gray-600' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aliquam totam optio odio exercitationem voluptatem adipisci illo, fuga distinctio laborum!</p>
       </div>
       <div className="team-sub-container !mt-[30px]">
         <Slider {...settings}>

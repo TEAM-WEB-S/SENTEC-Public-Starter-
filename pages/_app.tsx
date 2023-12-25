@@ -6,6 +6,7 @@ import "@/styles/banner.css"
 import "@/styles/about.css"
 import "@/styles/domain.css"
 import "@/styles/excom.css"
+import "@/styles/gallery.css"
 import { Toaster } from "react-hot-toast"
 
 export default function App({ Component, pageProps }: AppProps) {

@@ -6,11 +6,11 @@ import React from "react"
 
 function Contact() {
   return (
-    <div className=" mt-0 overflow-y-hidden bg-gray-100">
-      <div className="grid h-full w-full grid-cols-1 md:grid-cols-3 md:gap-1 md:pt-[2.9rem]">
+    <div className="max-w-[1280px] mx-auto w-[95%] mt-[30px] overflow-y-hidden ">
+      <div className="grid h-full w-full grid-cols-1 md:grid-cols-3 gap-[20px] md:gap-1 md:pt-[2.9rem]">
         {/* -------------------first-------------  */}
 
-        <div className=" h-[40.5rem] bg-white p-3 md:ml-[6rem] md:w-[29rem] md:p-9">
+        <div className=" h-[40.5rem] bg-white p-3  md:p-9">
           <h3 className="mb-6 mt-4 text-[#f4af1b]">
             <FontAwesomeIcon className="mr-2" icon={solid("star")} />
             MAKE CONNECTING
@@ -44,6 +44,8 @@ function Contact() {
                 height={35}
                 alt="fb.png"
                 src={"/../image/facebook.png"}
+
+                className="object-cover"
               />
             </Link>
 
@@ -78,7 +80,7 @@ function Contact() {
 
         {/* --------------middle---------------- */}
 
-        <div className="flex items-center justify-center">
+        <div className="hidden items-center justify-center md:flex">
           <Image
             width={420}
             height={50}
@@ -88,7 +90,7 @@ function Contact() {
         </div>
         {/* ---------last----------------- */}
 
-        <div className="h-[40.5rem] bg-white md:w-[29rem]">
+        <div className="h-[40.5rem] bg-white ">
           <div className="relative grid grid-rows-3 gap-9 border border-white pl-[1rem] md:p-9 md:text-center">
             <div className="relative border-b border-gray-200 pb-7 pt-4">
               <h3 className="mb-1 text-xl font-extrabold">Business</h3>
