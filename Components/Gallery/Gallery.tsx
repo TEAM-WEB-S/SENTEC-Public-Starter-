@@ -13,7 +13,36 @@ import techtalk09 from '../../public/Gallery/TechTalk/TechtalkP1.3.jpg'
 import techtalk10 from '../../public/Gallery/TechTalk/TechtalkP1.4.jpg'
 import techtalk11 from '../../public/Gallery/TechTalk/TechtalkP1.5.jpg'
 import techtalk12 from '../../public/Gallery/TechTalk/TechtalkP2.1.jpg'
+
+import olymbiad01 from '../../public/Gallery/Olymbiad/FB_IMG_1703591446241.jpg'
+import olymbiad02 from '../../public/Gallery/Olymbiad/FB_IMG_1703591438533.jpg'
+import olymbiad03 from '../../public/Gallery/Olymbiad/FB_IMG_1703591459267.jpg'
+import olymbiad04 from '../../public/Gallery/Olymbiad/FB_IMG_1703591476899.jpg'
+import olymbiad05 from '../../public/Gallery/Olymbiad/FB_IMG_1703591497095.jpg'
+import olymbiad06 from '../../public/Gallery/Olymbiad/FB_IMG_1703591503315.jpg'
+import olymbiad07 from '../../public/Gallery/Olymbiad/FB_IMG_1703591513306.jpg'
+import olymbiad08 from '../../public/Gallery/Olymbiad/FB_IMG_1703591520002.jpg'
+import olymbiad09 from '../../public/Gallery/Olymbiad/FB_IMG_1703591528082.jpg'
+import olymbiad10 from '../../public/Gallery/Olymbiad/FB_IMG_1703591580826.jpg'
+import olymbiad11 from '../../public/Gallery/Olymbiad/FB_IMG_1703591666334.jpg'
+import olymbiad12 from '../../public/Gallery/Olymbiad/FB_IMG_1703591680542.jpg'
+
 import Image from 'next/image'
+
+const OlymbiadPhotos = [
+    olymbiad01,
+    olymbiad02,
+    olymbiad03,
+    olymbiad04,
+    olymbiad05,
+    olymbiad06,
+    olymbiad07,
+    olymbiad08,
+    olymbiad09,
+    olymbiad10,
+    olymbiad11,
+    olymbiad12,
+]
 
 const TechTalkPhotos = [
     techtalk01,
@@ -39,7 +68,7 @@ const sentechGallary = [
     },
     {
         name : 'Olymbiad',
-        images : []
+        images : OlymbiadPhotos
     },
 ]
 
@@ -68,9 +97,9 @@ const Gallery = () => {
         </div>
         <div className='image-gallery-sentec' >
             {selected.images.map((img, index) => (
-            <div className='each-gallery-image' data-aos="fade-up" data-aos-duration="800" key={index}>
-                <Image src={img} alt={`Tech Talk ${index + 1}`} className='galley-images' />
-            </div>
+                <div className='each-gallery-image' data-aos="fade-up" data-aos-duration="800" key={index}>
+                    <Image src={img} alt={`Tech Talk ${index + 1}`} className='galley-images' />
+                </div>
             ))}
         </div>
     </div>
